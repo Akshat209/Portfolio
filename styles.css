@@ -1,0 +1,291 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body
+{
+	max-width: 1150px;
+	margin:0 auto;
+	font-family: 'Comfortaa', cursive;
+	overflow-x: hidden;
+	background-image: url(https://wallpaperaccess.com/full/666602.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Navbar*/
+
+.nav
+{
+	max-width: 1150px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	border:2px solid black;
+	border-radius: 15px;
+}
+
+.nav-link
+{
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.nav-link:hover
+{
+	color: black;
+	background-color: white;
+	transform: scale(1.2);
+}
+
+.connect
+{
+	display: none;
+}
+
+.brand:hover
+{
+	transform: scale(1.2);
+}
+
+/*About Me*/
+
+.aboutMe
+{
+	max-width: 1150px;
+	margin: 0 auto;
+	background-color: black;
+	margin-top: 80px;
+	color: white;
+	border-radius: 25px;
+}
+
+.aboutMe h1,h6
+{
+	text-align: center;
+}
+
+.aboutMe p
+{
+	font-size: 120%;
+	width: 60%;
+	text-align: center;
+	margin-left: 7%;
+}
+
+.aboutMe .self .pic
+{
+	float: right;
+	width: 17%;
+	margin: 80px 80px;
+}
+
+.aboutMe .icon
+{
+	display: inline-block;
+	margin-left:23%; 
+}
+
+.aboutMe .icon .ic
+{
+	color: white;
+	font-size: 120%;
+	padding:15px;
+	margin: 5px 10px;
+}
+
+.aboutMe .icon .ic:hover
+{
+	color: black;
+	background-color: white;
+}
+
+/*Experience*/
+
+.personal
+{
+	max-width: 1150px;
+}
+
+.ed-head
+{
+	font-size: 180%;
+	font-weight: bold;
+}
+
+.ed-head .ed-role
+{
+	font-size: 60%;
+	font-weight: normal;
+}
+
+.ed-head .date
+{
+	font-size: 70%;
+	margin-left: 40%;
+}
+
+.ed-head .desc
+{
+	font-weight: normal;
+	margin-left: 5%;
+	font-size: 60%;
+}
+
+/*Projects*/
+
+.proj
+{
+	width: 100%;
+	height: auto;
+	border:5px solid black;
+}
+
+.proj:hover
+{
+	transform: scale(1.1);
+}
+
+/*Contact*/
+
+.contact
+{
+	max-width: 1150px;
+}
+
+.contact img
+{
+	width: 15%;
+	float: right;
+	margin-right: 60%;
+}
+
+.contact img:hover
+{
+	transform: scale(1.3);
+}
+
+.sign
+{
+	max-width: 1150px;
+	text-align: center;
+}
+.personal .date
+{
+	margin-left: 12%;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 840px)
+{
+	.contact .wa
+	{
+		float: left;
+		margin-left: 2%;
+	}
+	.aboutMe .self .pic
+	{
+		margin: 0;
+	}
+	.aboutMe .info
+	{
+		width: 80%;
+	}
+	.resume
+	{
+		width: 30%;
+	}
+	.personal .date
+	{
+		margin-left: 5%;
+	}
+}
+
+@media only screen and (max-width: 715px)
+{
+	.contact .wa
+	{
+		width: 24%;
+		float: left;
+		margin-left: 5%;
+	}
+	body
+	{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.aboutMe .self .pic
+	{
+		margin: 0;
+	}
+	.aboutMe .info
+	{
+		width: 80%;
+	}
+	.aboutMe h6
+	{
+		width: 80%;
+	}
+	.resume
+	{
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 500px)
+{
+	.aboutMe .self .pic
+	{
+		margin: 0;
+	}
+	.aboutMe .icon
+	{
+		margin-left: 14%;
+	}
+	body
+	{
+		margin-left: 6%;
+	}
+	.nav
+	{
+		width: 90%;
+	}
+	.aboutMe h6
+	{
+		width: 80%;
+	}
+	.aboutMe .info
+	{
+		width: 80%;
+	}
+	.contact .wa
+	{
+		width: 28%;
+		margin-left: 1%;
+	}
+	.resume
+	{
+		width: 30%;
+	}
+	.personal .date
+	{
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 300px)
+{
+	.resume
+	{
+		width: 45%;
+	}
+	.personal .role
+	{
+		font-size:50%;
+	}
+}
